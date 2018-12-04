@@ -6,14 +6,12 @@ $jurusan = filter_input(INPUT_POST, 'jurusan');
 $kelas = filter_input(INPUT_POST, 'kelas');
 $no_telp = filter_input(INPUT_POST, 'no_telp');
 
-if (!empty($npm)) {
-    if (!empty($nama)) {
-        if(!empty($jurusan)) {
-            if(!empty($kelas)) {
-                if(!empty($no_telp)) {
-
-                    function OpenCon() {
-
+function OpenCon() {
+    if (!empty($npm)) {
+        if (!empty($nama)) {
+            if(!empty($jurusan)) {
+                if(!empty($kelas)) {
+                    if(!empty($no_telp)) {
                         $server = "localhost";
                         $user = "root";
                         $password = "1234";
